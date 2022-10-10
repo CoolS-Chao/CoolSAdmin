@@ -1,16 +1,12 @@
-import Child from "./Child"
-import "./App.css"
-import axios from "axios"
+// import Child from "./Child"
+import "./App.css";
+import IndexRouter from "./router/IndexRouter";
 
 function App() {
   return <div>
-    <ul>
-      <li>111</li>
-      <li>222</li>
-      <li>333</li>
-    </ul>
-    <Child/>
+    <IndexRouter />
   </div>
+
 }
 
 export default App
