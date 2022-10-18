@@ -11,7 +11,7 @@ export default function IndexRouter() {
                 {/* react-router V6 不使用 Switch 与 component */}
                 <Route path="/login" element={<Login />}></Route>
                 <Route path="/">
-                    <Route path="/home/*" element={<NewsSandBox />}></Route>
+                    <Route path="/111/*" element={<NewsSandBox />}></Route>
                 </Route>
             </Routes>
         </BrowserRouter>
