@@ -10,15 +10,19 @@ const { Header } = Layout;
 export default function TopHeader() {
   //函数式组件利用hooks设置状态.
   const [collapsed, setCollapsed] = useState(false)
+  const changeCollapsed = () => {
+    setCollapsed(!collapsed)
+  }
   return (
     <Header
       className="site-layout-background"
       style={{
-        padding: 0,
+        padding: "0 16px"
       }}
     >
     {
-      collapsed?<MenuUnfoldOutlined />:<MenuFoldOutlined />
+      collapsed?<MenuUnfoldOutlined onClick={changeCollapsed}/>
+        :<MenuFoldOutlined onClick={changeCollapsed}/>
     }
       {/* {React.createElement(collapsed ? MenuUnfoldOutlined : MenuFoldOutlined, {
         className: 'trigger',

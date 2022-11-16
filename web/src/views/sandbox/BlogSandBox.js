@@ -21,7 +21,6 @@ export default function BlogSandBox() {
                         minHeight: 280,
                     }}
                 >
-                    Content
                 </Content>
             </Layout>
         </Layout>
